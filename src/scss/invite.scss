@@ -1,0 +1,10 @@
+.invite {
+	padding: 10px 0 30px;
+	color: #000;
+	text-align: center;
+	position: relative;
+
+	@media (max-width: $lg) {
+		padding: 20px 0;
+	}
+}

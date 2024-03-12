@@ -1,0 +1,174 @@
+.feedback {
+	padding: 10px 0 50px;
+
+	@media (max-width: $lg) {
+		padding: 30px 0;
+	}
+
+	&__text {
+		font-size: 16px;
+	}
+}
+
+.text {
+	&-sp {
+		font-weight: 700;
+	}
+}
+
+.form {
+	margin: 0 auto;
+	max-width: 500px;
+
+	&__title {
+		font-size: 20px;
+		margin: 20px 0 5px;
+		font-weight: 400;
+	}
+
+	&-group {
+		&_last {
+			margin-top: 30px;
+		}
+	}
+
+	&-label {
+		margin-bottom: 0;
+	}
+
+	&-input,
+	&-textarea {
+		display: block;
+		width: 100%;
+		padding: 10px 10px;
+		background-color: transparent;
+		border: 1px solid #000;
+		border-radius: 7px;
+		transition: border 0.3s;
+
+		&:focus-visible {
+			outline: none;
+			border: 1px solid $color-pink;
+		}
+	}
+
+	&-textarea {
+		margin-top: 10px;
+		resize: vertical;
+	}
+
+	&__button {
+		max-width: 500px;
+		width: 100%;
+		margin-top: 20px;
+		border-radius: 7px;
+		padding: 10px;
+		border: 1px solid #000;
+		background-color: transparent;
+		transition: box-shadow 0.5s;
+		color: #000;
+
+		&:hover {
+			box-shadow: 0px 0px 10px -5px inset;
+		}
+	}
+}
+
+.form-radio {
+	&__label {
+		display: block;
+		width: fit-content;
+		cursor: pointer;
+	}
+
+	&__rel {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		opacity: 0;
+		appearance: none;
+	}
+
+	&__fake {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		width: 20px;
+		height: 20px;
+		background-color: transparent;
+		border-radius: 50%;
+		margin-right: 5px;
+		border: 1px solid #000;
+	}
+
+	&__rel:checked + &__fake::before {
+		content: '';
+		display: block;
+		width: 12px;
+		height: 12px;
+		position: absolute;
+		top: 3px;
+		left: 3px;
+		background-color: $color-pink;
+		border-radius: 50%;
+	}
+
+	&__title {
+		font-size: $fz-text;
+	}
+}
+
+.form-checkbox {
+	&__label {
+		display: block;
+		width: fit-content;
+		cursor: pointer;
+	}
+
+	&__rel {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		opacity: 0;
+		appearance: none;
+	}
+
+	&__fake {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		width: 20px;
+		height: 20px;
+		background-color: transparent;
+		margin-right: 5px;
+		border: 1px solid #000;
+	}
+
+	&__rel:checked + &__fake::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 1px;
+		left: 1px;
+		width: 16px;
+		height: 16px;
+		background-image: url('/images/mark.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	&__title {
+		font-size: $fz-text;
+	}
+}
+
+.success {
+	display: none;
+	background-color: $color-pink;
+	text-align: center;
+	border-radius: 7px;
+	padding: 10px;
+	margin-top: 20px;
+	border: solid 2px #ff008c;
+}
