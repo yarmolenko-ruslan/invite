@@ -1,3 +1,5 @@
+const TOKEN = 'token';
+const CHAT_ID = 'chat_id';
 // Добавить сообщение
 const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 // Добавить файл
