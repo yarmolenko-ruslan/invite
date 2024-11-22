@@ -1,12 +1,13 @@
 .feedback {
-	padding: 10px 0 50px;
+	padding: 30px 0 20px;
 
-	@media (max-width: $lg) {
-		padding: 30px 0;
+	&__title {
+		margin-bottom: 20px;
 	}
 
 	&__text {
 		font-size: 16px;
+		margin-bottom: 15px;
 	}
 }
 
@@ -22,47 +23,56 @@
 
 	&__title {
 		font-size: 20px;
-		margin: 20px 0 5px;
+		margin: 20px 0 10px;
 		font-weight: 400;
+
+		&_black {
+			color: #000;
+		}
 	}
 
 	&-group {
 		&_last {
-			margin-top: 30px;
+			margin-top: 15px;
 		}
 	}
 
 	&-label {
 		margin-bottom: 0;
+
+		&_black {
+			color: #000;
+		}
 	}
 
-	&-input,
-	&-textarea {
+	&-input {
 		display: block;
 		width: 100%;
 		padding: 10px 10px;
 		background-color: transparent;
-		border: 1px solid #000;
-		border-radius: 7px;
-		transition: border 0.3s;
+		color: #000;
+		border: none;
+		border-color: transparent;
+		border-bottom: 1px solid #000;
 
 		&:focus-visible {
 			outline: none;
-			border: 1px solid $color-pink;
+			border-color: rgba(0, 0, 0, 0.4);
+			transition: all 0.1s;
 		}
-	}
 
-	&-textarea {
-		margin-top: 10px;
-		resize: vertical;
+		&::placeholder {
+			color: rgba(0, 0, 0, 0.9);
+		}
 	}
 
 	&__button {
 		max-width: 500px;
 		width: 100%;
-		margin-top: 20px;
 		border-radius: 7px;
 		padding: 10px;
+		margin-top: 20px;
+		cursor: pointer;
 		border: 1px solid #000;
 		background-color: transparent;
 		transition: box-shadow 0.5s;
@@ -75,10 +85,19 @@
 }
 
 .form-radio {
+	&__item {
+		margin-bottom: 5px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
 	&__label {
 		display: block;
 		width: fit-content;
 		cursor: pointer;
+		color: #000;
 	}
 
 	&__rel {
@@ -109,20 +128,25 @@
 		position: absolute;
 		top: 3px;
 		left: 3px;
-		background-color: $color-pink;
+		background-color: #000;
 		border-radius: 50%;
-	}
-
-	&__title {
-		font-size: $fz-text;
 	}
 }
 
 .form-checkbox {
+	&__item {
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
 	&__label {
 		display: block;
 		width: fit-content;
 		cursor: pointer;
+		color: #000;
 	}
 
 	&__rel {
@@ -157,18 +181,15 @@
 		background-position: center;
 		background-size: cover;
 	}
-
-	&__title {
-		font-size: $fz-text;
-	}
 }
 
 .success {
-	display: none;
-	background-color: $color-pink;
+	opacity: 0;
 	text-align: center;
 	border-radius: 7px;
 	padding: 10px;
 	margin-top: 20px;
-	border: solid 2px #ff008c;
+	color: #000;
+	border: solid 2px rgb(16, 161, 0);
+	background-color: rgba(52, 201, 36, 0.6);
 }

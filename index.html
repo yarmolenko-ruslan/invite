@@ -4,32 +4,57 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/png" href="/favicon/rings.png" />
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-			crossorigin="anonymous"
-		/>
 		<link rel="stylesheet" href="./aos/aos.css" />
-		<title>Приглашение на свадьбу Ромы и Лизы</title>
+		<title>Приглашение на свадьбу Алины и Евгения</title>
 	</head>
-	<body>
+	<body class="body">
 		<div id="app">
 			<header class="header">
 				<div class="container">
-					<div class="header__wrapper">
+					<div class="header__inner">
 						<h1
 							class="header__title"
 							data-aos="fade-up"
 							data-aos-duration="1000"
 						>
-							Приглашаем Вас на нашу свадьбу!
+							Алина & Евгений
 						</h1>
-						<p class="header__date" data-aos="fade-up" data-aos-duration="1000">
-							02 | 08 | 2024
+						<h2
+							class="header__subtitle"
+							data-aos="fade-up"
+							data-aos-duration="1000"
+						>
+							01.01.2025
+						</h2>
+					</div>
+				</div>
+			</header>
+
+			<main class="main">
+				<section class="invite" data-aos="fade-up" data-aos-duration="1000">
+					<div class="container">
+						<h2 class="title" data-aos="fade-up" data-aos-duration="1000">
+							Дорогие гости!
+						</h2>
+						<p
+							class="text invite__text"
+							data-aos="fade-up"
+							data-aos-duration="1000"
+						>
+							Один день в этом году будет для нас особенным, и мы хотим провести
+							его в кругу близких и друзей.
 						</p>
+						<p
+							class="text invite__text"
+							data-aos="fade-up"
+							data-aos-duration="1000"
+						>
+							С большим удовольствием приглашаем Вас на знаменательный праздник
+							- нашу свадьбу!
+						</p>
+
 						<div class="timer" data-aos="fade-up" data-aos-duration="1000">
-							<p class="timer__title">через:</p>
+							<p class="timer__title">До свадьбы:</p>
 							<ul class="timer__list">
 								<li class="timer__item">
 									<p id="days" class="timer__number">000</p>
@@ -49,32 +74,15 @@
 								</li>
 							</ul>
 						</div>
-					</div>
-				</div>
-			</header>
 
-			<main class="main">
-				<section class="invite" data-aos="fade-up" data-aos-duration="1000">
-					<div class="container">
 						<img
-							src="/images/uzor.png"
-							alt="Узор"
-							width="100%"
-							data-aos="fade"
-							data-aos-duration="1000"
-						/>
-						<p
-							class="text invite__text"
+							class="invite__hand-img"
+							src="/images/hand.jpeg"
+							alt="Предложение руки и сердца"
+							title="Предложение руки и сердца"
 							data-aos="fade-up"
 							data-aos-duration="1000"
-						>
-							Самое главное и ценное в жизни - это Семья! Сначала, в которой
-							рождаешься, а затем, которую создаешь!
-						</p>
-						<p class="text" data-aos="fade-up" data-aos-duration="1000">
-							Будем рады видеть Вас на торжестве, посвященному нашему
-							бракосочетанию!
-						</p>
+						/>
 					</div>
 				</section>
 
@@ -82,63 +90,28 @@
 					<div class="container">
 						<div class="timing__inner">
 							<h2 class="title" data-aos="fade-up" data-aos-duration="1000">
-								Тайминг дня
+								Тайминг дня:
 							</h2>
-							<h3
-								class="timing__subtitle"
+							<ul
+								class="timing__list"
 								data-aos="fade-up"
 								data-aos-duration="1000"
 							>
-								Суббота, 2 августа 2024
-							</h3>
-							<ul class="timing__list">
-								<li
-									class="timing__card"
-									data-aos="fade-right"
-									data-aos-duration="1000"
-								>
-									<img
-										class="timing__img"
-										src="/images/car.svg"
-										alt="Лимузин"
-										title="Лимузин"
-									/>
-									<div class="timing__info">
-										<p>15:00</p>
-										<p>Сбор гостей</p>
-									</div>
+								<li class="timing__item">
+									<span class="timing__item-number">16:00</span>
+									<span class="timing__item-text">- сбор гостей / фуршет</span>
 								</li>
-								<li
-									class="timing__card"
-									data-aos="fade-up"
-									data-aos-duration="1000"
-								>
-									<img
-										class="timing__img"
-										src="/images/arka.svg"
-										alt="Арка"
-										title="Арка"
-									/>
-									<div class="timing__info">
-										<p>15:30</p>
-										<p>Церемония</p>
-									</div>
+								<li class="timing__item">
+									<span class="timing__item-number">16:30</span>
+									<span class="timing__item-text">- свадебная церемония</span>
 								</li>
-								<li
-									class="timing__card"
-									data-aos="fade-left"
-									data-aos-duration="1000"
-								>
-									<img
-										class="timing__img"
-										src="/images/bokals.svg"
-										alt="Бокалы"
-										title="Бокалы"
-									/>
-									<div class="timing__info">
-										<p>16:30</p>
-										<p>Начало банкета</p>
-									</div>
+								<li class="timing__item">
+									<span class="timing__item-number">17:00</span>
+									<span class="timing__item-text">- начало банкета</span>
+								</li>
+								<li class="timing__item">
+									<span class="timing__item-number">21:00</span>
+									<span class="timing__item-text">- праздничный торт</span>
 								</li>
 							</ul>
 						</div>
@@ -148,38 +121,36 @@
 				<section class="location">
 					<div class="container">
 						<div class="location__inner">
-							<h2 class="title" data-aos="fade-up" data-aos-duration="1000">
-								Местоположение
-							</h2>
-							<p class="text" data-aos="fade-up" data-aos-duration="1000">
-								Наше свадебное торжество состоится по адресу г. Красноярск, ул.
-								Парковая 88, корпус 1
-							</p>
-							<p
-								class="text location__text"
-								data-aos="fade-up"
-								data-aos-duration="1000"
-							>
-								Ресторан Shalet
-							</p>
-							<h2 class="title" data-aos="fade-up" data-aos-duration="1000">
-								Как добраться?
-							</h2>
-							<p class="text" data-aos="fade-up" data-aos-duration="1000">
-								Мы подготовили для Вас карту, чтобы Вы точно добрались и
-								порадовали нас своим присутствием
-							</p>
-							<div
-								class="location__map location__map_active"
-								data-aos="fade-up"
-								data-aos-duration="1000"
-							>
-								<iframe
-									src="https://yandex.ru/map-widget/v1/?um=constructor%3A545ef2d641decbc8b0762940108491cd7206f18ae8d5d888b39b2eae49eebe28&amp;source=constructor"
-									width="100%"
-									height="400"
-									frameborder="0"
-								></iframe>
+							<div class="location__box">
+								<h2
+									class="title title_black"
+									data-aos="fade-down"
+									data-aos-duration="1000"
+								>
+									Местоположение
+								</h2>
+								<p
+									class="location__text"
+									data-aos="fade-up"
+									data-aos-duration="1000"
+								>
+									Наша свадьба будет проходить в Банкетном зале - "Старый замок"
+								</p>
+								<p
+									class="location__text location__text_last"
+									data-aos="fade-up"
+									data-aos-duration="1000"
+								>
+									По адресу г. Красноярск, ул. Калатушкина, 20Б
+								</p>
+								<a
+									class="location__link"
+									target="_blank"
+									href="https://go.2gis.com/3swsm"
+									data-aos="fade"
+									data-aos-duration="1000"
+									>Перейти к карте</a
+								>
 							</div>
 						</div>
 					</div>
@@ -196,72 +167,54 @@
 							data-aos-duration="1000"
 						>
 							Мы очень старались сделать праздник красивым и будем рады, если в
-							своих нарядах вы поддержите цветовую гамму нашей свадьбы:
+							своих нарядах вы поддержите цветовую гамму нашей свадьбы
 						</div>
 						<div class="colors" data-aos="fade-up" data-aos-duration="1000">
-							<img
-								src="/images/orange.png"
-								alt="Оранжевый"
-								title="Оранжевый"
-								class="colors__img"
-							/>
-							<img
-								src="/images/pink.png"
-								alt="Розовый"
-								title="Розовый"
-								class="colors__img"
-							/>
-							<img
-								src="/images/blue.png"
-								alt="Голубой"
-								title="Голубой"
-								class="colors__img"
-							/>
-							<img
-								src="/images/orange.png"
-								alt="Оранжевый"
-								title="Оранжевый"
-								class="colors__img"
-							/>
-							<img
-								src="/images/pink.png"
-								alt="Розовый"
-								title="Розовый"
-								class="colors__img"
-							/>
+							<div
+								class="colors__circle colors__circle_green"
+								title="Цвет"
+							></div>
+							<div
+								class="colors__circle colors__circle_white"
+								title="Цвет"
+							></div>
+							<div
+								class="colors__circle colors__circle_brown"
+								title="Цвет"
+							></div>
+							<div
+								class="colors__circle colors__circle_black"
+								title="Цвет"
+							></div>
 						</div>
 						<div class="dress__photos">
 							<img
-								src="/images/dress-bluee.jpg"
-								alt=""
-								title="Голубое платье"
-								class="dress__photo"
-								data-aos="fade-right"
-								data-aos-duration="1000"
+								src="/images/white.jpeg"
+								alt="Белые наряды"
+								title="Белые наряды"
+								class="dress__photo aos-init aos-animate"
+								data-aos="fade-down"
 							/>
 							<img
-								src="/images/dress-pink.jpg"
-								alt=""
-								title="Розовое платье"
-								class="dress__photo"
-								data-aos="fade-left"
-								data-aos-duration="1000"
+								src="/images/black.jpeg"
+								alt="Черные наряды"
+								title="Черные наряды"
+								class="dress__photo aos-init aos-animate"
+								data-aos="fade-up"
 							/>
 							<img
-								src="/images/dress-blue.jpg"
-								alt=""
-								title="Синее платье"
-								class="dress__photo"
-								data-aos="fade-right"
-								data-aos-duration="1000"
+								src="/images/broun.jpeg"
+								alt="Коричневые наряды"
+								title="Коричневые наряды"
+								class="dress__photo aos-init aos-animate"
+								data-aos="fade-down"
 							/>
 							<img
-								src="/images/dress-orange.jpg"
-								alt=""
-								title="Оранжевое платье"
-								class="dress__photo"
-								data-aos="fade-left"
-								data-aos-duration="1000"
+								src="/images/green.jpeg"
+								alt="Зеленые наряды"
+								title="Зеленые наряды"
+								class="dress__photo aos-init aos-animate"
+								data-aos="fade-up"
 							/>
 						</div>
 					</div>
@@ -272,44 +225,95 @@
 						<h2 class="title" data-aos="fade-up" data-aos-duration="1000">
 							Детали
 						</h2>
-						<p class="text" data-aos="fade-up" data-aos-duration="1000">
-							Не ломайте голову над подарком - мы будем рады вашим пожеланиям в
-							конвертах.
-						</p>
-						<p class="text" data-aos="fade-up" data-aos-duration="1000">
-							От всего сердца просим Вас воздержаться от криков "Горько!" и
-							сохранить атмосферу уютного семейного праздника.
-						</p>
 						<p
 							class="text details__text"
 							data-aos="fade-up"
 							data-aos-duration="1000"
 						>
-							На случай, если вы все-таки запланируете эту фразу, предусмотрена
-							символическая штрафная система - 1000 рублей
+							Мы не хотим обременять Вас поиском подарка, поэтому будем рады
+							Вашему вкладу в наш семейный бюджет
 						</p>
-						<p
-							class="text details__text_last"
-							data-aos="fade-up"
-							data-aos-duration="1000"
-						>
-							Захватите с собой удобную обувь для танцев!
-						</p>
+					</div>
+				</section>
+
+				<section class="contacts">
+					<div class="container">
+						<div class="contacts__inner">
+							<h2 class="title" data-aos="fade-up" data-aos-duration="1000">
+								Контакты
+							</h2>
+							<p class="text" data-aos="fade-up" data-aos-duration="1000">
+								Если вы хотите сделать нам сюрприз, пожалуйста, свяжитесь с
+								нашим ведущим Алексеем, он поможет Вам с реализацией идеи
+							</p>
+							<div
+								class="contacts__links contacts__links_streak"
+								data-aos="fade-up"
+								data-aos-duration="1000"
+							>
+								<a
+									class="contacts__number"
+									href="tel:#"
+									class="contacts__number"
+								>
+									<span class="contacts__label">Алексей</span>
+									+7 (900) 888-99-00
+								</a>
+								<a
+									class="contacts__whatsapp"
+									href="#"
+									target="_blank"
+									title="Whatsapp Алексея"
+								></a>
+							</div>
+
+							<p
+								class="text contacts__text-last"
+								data-aos="fade-up"
+								data-aos-duration="1000"
+							>
+								В случае возникновения вопросов, в день торжества, обращайтесь к
+								нашему свадебному координатору Яне
+							</p>
+							<div
+								class="contacts__links"
+								data-aos="fade-up"
+								data-aos-duration="1000"
+							>
+								<a href="tel:#" class="contacts__number">
+									<span class="contacts__label">Яна</span>
+									+7 (923) 999-99-99
+								</a>
+								<a
+									href="#"
+									class="contacts__whatsapp"
+									target="_blank"
+									title="Whatsapp Яны"
+								></a>
+							</div>
+						</div>
 					</div>
 				</section>
 
 				<section class="feedback">
 					<div class="container">
 						<div class="feedback__inner">
-							<h2 class="title" data-aos="fade-up" data-aos-duration="1000">
-								Присутствие на торжестве
+							<h2
+								class="title title_black feedback__title"
+								data-aos="fade-up"
+								data-aos-duration="1000"
+							>
+								Пожалуйста, ответьте на несколько вопросов в анкете
 							</h2>
-							<div class="text" data-aos="fade-up" data-aos-duration="1000">
-								Пожалуйста, подтвердите ваше присутствие на нашем празднике
-								<span class="text-sp">до 10 мая 2024 года</span>
+							<div
+								class="text text_black feedback__text"
+								data-aos="fade-up"
+								data-aos-duration="1000"
+							>
+								Просьба заполнить анкету до 15 июля
 							</div>
 							<div
-								class="text feedback__text"
+								class="text feedback__text text_black"
 								data-aos="fade-up"
 								data-aos-duration="1000"
 							>
@@ -319,27 +323,27 @@
 
 							<form id="form" class="form">
 								<h3
-									class="form__title"
-									data-aos="fade-right"
+									class="form__title form__title_black"
+									data-aos="fade-down"
 									data-aos-duration="1000"
 								>
-									Как Вас зовут?
+									Как вас зовут?
 								</h3>
 								<input
 									class="form-input"
 									name="name"
 									type="text"
-									maxlength="30"
+									maxlength="50"
 									minlength="5"
 									required
 									placeholder="Ваши имя и фамилия"
-									data-aos="fade-right"
+									data-aos="fade-down"
 									data-aos-duration="1000"
 								/>
 
 								<h3
-									class="form__title"
-									data-aos="fade-left"
+									class="form__title form__title_black"
+									data-aos="fade-up"
 									data-aos-duration="1000"
 								>
 									Подтвердите свое присутствие
@@ -347,7 +351,7 @@
 
 								<ul
 									class="form-radio"
-									data-aos="fade-right"
+									data-aos="fade-down"
 									data-aos-duration="1000"
 								>
 									<li class="form-radio__item">
@@ -356,10 +360,10 @@
 												type="radio"
 												class="form-radio__rel"
 												name="presence"
-												value="Подтверждаю"
+												value="Я приду / Мы придем"
 											/>
 											<span class="form-radio__fake"></span>
-											<span class="form-radio__title">Подтверждаю</span>
+											<span class="form-radio__title">Я приду / Мы придем</span>
 										</label>
 									</li>
 									<li class="form-radio__item">
@@ -368,12 +372,10 @@
 												type="radio"
 												class="form-radio__rel"
 												name="presence"
-												value="Затрудняюсь ответить"
+												value="Сообщу ответ позже"
 											/>
 											<span class="form-radio__fake"></span>
-											<span class="form-radio__title"
-												>Затрудняюсь ответить</span
-											>
+											<span class="form-radio__title">Сообщу ответ позже</span>
 										</label>
 									</li>
 									<li class="form-radio__item">
@@ -382,25 +384,25 @@
 												type="radio"
 												class="form-radio__rel"
 												name="presence"
-												value="Не смогу придти"
+												value="Прийти не получится"
 											/>
 											<span class="form-radio__fake"></span>
-											<span class="form-radio__title">Не смогу придти</span>
+											<span class="form-radio__title">Прийти не получится</span>
 										</label>
 									</li>
 								</ul>
 
 								<h3
-									class="form__title"
-									data-aos="fade-left"
+									class="form__title form__title_black"
+									data-aos="fade-up"
 									data-aos-duration="1000"
 								>
-									Ваши предпочтения по алкоголю
+									Предпочтения по напиткам
 								</h3>
 
 								<ul
 									class="form-checkbox"
-									data-aos="fade-right"
+									data-aos="fade-down"
 									data-aos-duration="1000"
 								>
 									<li class="form-checkbox__item">
@@ -408,7 +410,34 @@
 											<input
 												type="checkbox"
 												class="form-checkbox__rel"
+												name="noAlcohol"
+												value="Безалкогольные напитки"
+											/>
+											<span class="form-checkbox__fake"></span>
+											<span class="form-checkbox__title"
+												>Безалкогольные напитки</span
+											>
+										</label>
+									</li>
+									<li class="form-checkbox__item">
+										<label class="form-checkbox__label">
+											<input
+												type="checkbox"
+												class="form-checkbox__rel"
+												name="champagne"
+												value="Шампанское"
+											/>
+											<span class="form-checkbox__fake"></span>
+											<span class="form-checkbox__title">Шампанское</span>
+										</label>
+									</li>
+									<li class="form-checkbox__item">
+										<label class="form-checkbox__label">
+											<input
+												type="checkbox"
+												class="form-checkbox__rel"
 												name="whiteWine"
+												value="Белое вино"
 											/>
 											<span class="form-checkbox__fake"></span>
 											<span class="form-checkbox__title">Белое вино</span>
@@ -420,6 +449,7 @@
 												type="checkbox"
 												class="form-checkbox__rel"
 												name="redWine"
+												value="Красное вино"
 											/>
 											<span class="form-checkbox__fake"></span>
 											<span class="form-checkbox__title">Красное вино</span>
@@ -430,135 +460,29 @@
 											<input
 												type="checkbox"
 												class="form-checkbox__rel"
-												name="champagne"
+												name="konyak"
+												value="Коньяк"
 											/>
 											<span class="form-checkbox__fake"></span>
-											<span class="form-checkbox__title">Шампанское</span>
+											<span class="form-checkbox__title">Коньяк</span>
 										</label>
 									</li>
+
 									<li class="form-checkbox__item">
 										<label class="form-checkbox__label">
 											<input
 												type="checkbox"
 												class="form-checkbox__rel"
 												name="vodka"
+												value="Водка"
 											/>
 											<span class="form-checkbox__fake"></span>
 											<span class="form-checkbox__title">Водка</span>
 										</label>
 									</li>
-									<li class="form-checkbox__item">
-										<label class="form-checkbox__label">
-											<input
-												type="checkbox"
-												class="form-checkbox__rel"
-												name="martini"
-											/>
-											<span class="form-checkbox__fake"></span>
-											<span class="form-checkbox__title">Мартини</span>
-										</label>
-									</li>
-									<li class="form-checkbox__item">
-										<label class="form-checkbox__label">
-											<input
-												type="checkbox"
-												class="form-checkbox__rel"
-												name="noAlcohol"
-											/>
-											<span class="form-checkbox__fake"></span>
-											<span class="form-checkbox__title">Ничего</span>
-										</label>
-									</li>
 								</ul>
 
-								<h3
-									class="form__title"
-									data-aos="fade-left"
-									data-aos-duration="1000"
-								>
-									Ваши предпочтения по горячему
-								</h3>
-
-								<ul
-									class="form-checkbox"
-									data-aos="fade-right"
-									data-aos-duration="1000"
-								>
-									<li class="form-checkbox__item">
-										<label class="form-checkbox__label">
-											<input
-												type="checkbox"
-												class="form-checkbox__rel"
-												name="pig"
-											/>
-											<span class="form-checkbox__fake"></span>
-											<span class="form-checkbox__title">Свинина</span>
-										</label>
-									</li>
-									<li class="form-checkbox__item">
-										<label class="form-checkbox__label">
-											<input
-												type="checkbox"
-												class="form-checkbox__rel"
-												name="chicken"
-											/>
-											<span class="form-checkbox__fake"></span>
-											<span class="form-checkbox__title">Курица</span>
-										</label>
-									</li>
-									<li class="form-checkbox__item">
-										<label class="form-checkbox__label">
-											<input
-												type="checkbox"
-												class="form-checkbox__rel"
-												name="beef"
-											/>
-											<span class="form-checkbox__fake"></span>
-											<span class="form-checkbox__title">Говядина</span>
-										</label>
-									</li>
-									<li class="form-checkbox__item">
-										<label class="form-checkbox__label">
-											<input
-												type="checkbox"
-												class="form-checkbox__rel"
-												name="fish"
-											/>
-											<span class="form-checkbox__fake"></span>
-											<span class="form-checkbox__title">Рыба</span>
-										</label>
-									</li>
-									<li class="form-checkbox__item">
-										<label class="form-checkbox__label">
-											<input
-												type="checkbox"
-												class="form-checkbox__rel"
-												name="vegan"
-											/>
-											<span class="form-checkbox__fake"></span>
-											<span class="form-checkbox__title"
-												>Вегетарианское блюдо</span
-											>
-										</label>
-									</li>
-								</ul>
-
-								<div
-									class="form-group form-group_last"
-									data-aos="fade-up"
-									data-aos-duration="1000"
-								>
-									<label for="other" class="form-label"
-										>Пожалуйста, оставьте свои иные предпочтения в еде, алкоголе
-										и его количестве, предупредите про аллергию или просто
-										напишите, какие мы классные. :)</label
-									>
-									<textarea
-										class="form-textarea"
-										name="other"
-										placeholder="Писать сюда"
-									></textarea>
-
+								<div class="form-group form-group_last">
 									<button class="form__button" type="submit">Отправить</button>
 									<div class="success">
 										Спасибо за Ваш ответ! Ждем Вас на нашей свадьбе!
@@ -572,13 +496,9 @@
 
 			<footer class="footer">
 				<div class="container">
-					<h2 class="title footer__title">
-						Мы будем искренне рады разделить этот день с Вами!
-					</h2>
+					<a href="#" class="footer__link"> © Copyright 2024 site.ru </a>
 				</div>
 			</footer>
-
-			<!--App-->
 		</div>
 
 		<script type="module" src="src/js/main.js"></script>

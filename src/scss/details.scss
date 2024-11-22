@@ -1,35 +1,7 @@
 .details {
-	padding: 20px 0 50px;
-
-	@media (max-width: $lg) {
-		padding-bottom: 30px;
-	}
+	padding: 20px 0 30px;
 
 	&__text {
-		position: relative;
-		padding-bottom: 30px;
-
-		@media (max-width: $lg) {
-			padding-bottom: 30px;
-		}
-
-		&_last {
-			margin-bottom: 0;
-		}
-
-		&::before {
-			content: '';
-			position: absolute;
-			background-color: $color-gray;
-			width: 100px;
-			height: 2px;
-			bottom: 0;
-			left: 50%;
-			transform: translate(-50%);
-
-			@media (max-width: $lg) {
-				bottom: -1px;
-			}
-		}
+		margin-bottom: 0;
 	}
 }

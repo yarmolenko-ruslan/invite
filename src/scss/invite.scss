@@ -1,10 +1,79 @@
 .invite {
-	padding: 10px 0 30px;
-	color: #000;
+	padding: 30px 0;
+	color: #fff;
 	text-align: center;
-	position: relative;
 
-	@media (max-width: $lg) {
-		padding: 20px 0;
+	&__hand-img {
+		max-width: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		@media (width > 450px) {
+			max-width: 100%;
+		}
+
+		@media (width > 700px) {
+			max-width: 650px;
+		}
+	}
+}
+
+.timer {
+	text-align: center;
+	margin: 0 auto;
+	max-width: 500px;
+	color: #fff;
+	padding: 15px;
+	border-radius: 10px;
+	padding-bottom: 30px;
+
+	&__title {
+		font-size: 20px;
+		padding-bottom: 15px;
+
+		@media (width > 450px) {
+			font-size: 24px;
+		}
+
+		@media (width > 700px) {
+			font-size: 30px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		justify-content: center;
+		font-size: 30px;
+		gap: 10px;
+
+		@media (width > 450px) {
+			gap: 15px;
+		}
+	}
+
+	&__number {
+		font-size: 30px;
+		margin-bottom: 5px;
+
+		@media (width > 450px) {
+			font-size: 40px;
+		}
+
+		@media (width > 700px) {
+			font-size: 50px;
+		}
+	}
+
+	&__descr {
+		font-size: 15px;
+
+		@media (width > 450px) {
+			font-size: 18px;
+		}
+
+		@media (width > 700px) {
+			font-size: 24px;
+		}
 	}
 }

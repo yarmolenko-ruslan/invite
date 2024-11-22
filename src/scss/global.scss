@@ -4,18 +4,22 @@
 	box-sizing: border-box;
 }
 
+.body {
+	background-color: rgb(75, 75, 75);
+}
+
 #app {
 	text-rendering: optimizeLegibility;
-	font-family: 'Rubik', sans-serif;
+	font-family: 'Forum', sans-serif;
 	font-weight: 400;
-	color: $color-fonts;
-	background: rgb(255, 248, 226);
+	color: #fff;
+
+	background: rgb(22, 22, 22);
 	background: linear-gradient(
-		0deg,
-		rgba(255, 248, 226, 1) 0%,
-		rgba(255, 255, 255, 1) 100%
+		195deg,
+		rgba(22, 22, 22, 1) 0%,
+		rgba(204, 204, 204, 1) 100%
 	);
-	overflow-x: hidden;
 }
 
 h1,
@@ -31,7 +35,7 @@ p {
 
 a {
 	text-decoration: none;
-	color: $color-fonts;
+	color: #fff;
 }
 
 ul,
@@ -51,24 +55,48 @@ li {
 }
 
 .title {
-	font-size: $fz-title;
+	font-size: 40px;
+	color: #fff;
+	font-family: 'Forum', serif;
 	font-weight: 400;
 	margin-bottom: 30px;
 	text-align: center;
 
-	@media (max-width: $sm) {
-		font-size: 24px;
+	@media (width > 450px) {
+		font-size: 50px;
+	}
+
+	@media (width > 700px) {
+		max-width: 672px;
+		margin: 0 auto 30px;
+	}
+
+	&_black {
+		color: #000;
+		font-size: 27px;
+
+		@media (width > 450px) {
+			font-size: 40px;
+		}
 	}
 }
 
 .text {
-	font-size: $fz-text;
+	font-size: 18px;
 	margin: 0 auto;
 	max-width: 500px;
 	margin-bottom: 30px;
 	text-align: center;
 
-	@media (max-width: $sm) {
-		font-size: 16px;
+	@media (width > 450px) {
+		font-size: 20px;
+	}
+
+	@media (width > 700px) {
+		font-size: 24px;
+	}
+
+	&_black {
+		color: #000;
 	}
 }
