@@ -310,7 +310,7 @@
 								data-aos="fade-up"
 								data-aos-duration="1000"
 							>
-								Просьба заполнить анкету до 15 июля
+								Просьба заполнить анкету до 15 декабря
 							</div>
 							<div
 								class="text feedback__text text_black"
@@ -321,32 +321,31 @@
 								заполнить форму на каждого взрослого
 							</div>
 
-							<form id="form" class="form">
+							<form action="" id="form" class="form">
 								<h3
 									class="form__title form__title_black"
 									data-aos="fade-down"
 									data-aos-duration="1000"
 								>
-									Как вас зовут?
+									Как вас зовут?*
 								</h3>
-								<input
-									class="form-input"
-									name="name"
-									type="text"
-									maxlength="50"
-									minlength="5"
-									required
-									placeholder="Ваши имя и фамилия"
-									data-aos="fade-down"
-									data-aos-duration="1000"
-								/>
+								<div class="form__box">
+									<input
+										class="form-input"
+										name="name"
+										type="text"
+										placeholder="Ваши имя и фамилия"
+										data-aos="fade-down"
+										data-aos-duration="1000"
+									/>
+								</div>
 
 								<h3
 									class="form__title form__title_black"
 									data-aos="fade-up"
 									data-aos-duration="1000"
 								>
-									Подтвердите свое присутствие
+									Подтвердите свое присутствие*
 								</h3>
 
 								<ul
@@ -412,6 +411,7 @@
 												class="form-checkbox__rel"
 												name="noAlcohol"
 												value="Безалкогольные напитки"
+												checked
 											/>
 											<span class="form-checkbox__fake"></span>
 											<span class="form-checkbox__title"
@@ -484,6 +484,7 @@
 
 								<div class="form-group form-group_last">
 									<button class="form__button" type="submit">Отправить</button>
+
 									<div class="success">
 										Спасибо за Ваш ответ! Ждем Вас на нашей свадьбе!
 									</div>
