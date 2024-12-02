@@ -1,4 +1,4 @@
-import { validationTextInput } from './formValidation';
+import { validateForm } from './formValidation';
 
 // Добавить ваш токен и чат id
 const TOKEN = '7286858908:AAGI1OP-TQAMNoQFKc9lhTDG8zxPhuvApcY';
@@ -10,7 +10,7 @@ const success = document.querySelector('.success');
 document.getElementById('form').addEventListener('submit', function (e) {
 	e.preventDefault();
 
-	if (validationTextInput(this) == true) {
+	if (validateForm(this)) {
 		let message = `<b>Форма обратной связи</b>\n`;
 		message += `\n`;
 		message += `<b>Отправитель: </b>${this.name.value}\n`;

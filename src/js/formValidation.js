@@ -1,69 +1,59 @@
-export function removeError(input, parent) {
-	if (input.classList.contains('error')) {
-		parent.querySelector('.form__error-label').remove();
-	}
-	input.classList.remove('error');
-}
+const setError = (element, text) => {
+	removeError(element);
 
-// export function removeError(input, parent) {
-// 	const errorLabel = parent.querySelector('.form__error-label');
-// 	if (errorLabel) {
-// 		errorLabel.remove();
-// 	}
-// 	input.classList.remove('error');
-// }
-
-export const createError = (element, text) => {
 	const errorLabel = document.createElement('label');
 	errorLabel.classList.add('form__error-label');
 	errorLabel.textContent = text;
-
 	element.append(errorLabel);
+	element.classList.add('error');
 };
 
-export const validationTextInput = form => {
-	let result = true;
-	const userName = form.querySelector('.form-input');
-	const parentError = form.querySelector('.form__box');
-
-	removeError(userName, parentError);
-
-	if (!userName.value.trim()) {
-		createError(parentError, 'Поле не заполнено!');
-		result = false;
-	} else if (userName.value.length < 5) {
-		createError(parentError, 'Минимальное кол-во символов 5');
-		result = false;
+const removeError = element => {
+	const errorLabel = element.querySelector('.form__error-label');
+	if (errorLabel) {
+		errorLabel.remove();
 	}
-
-	if (!result) {
-		userName.classList.add('error');
-	}
-
-	return result;
+	element.classList.remove('error');
 };
 
-// export const validationRadioInput = () => {
-// 	const checkRadio = form.querySelector('.form-checkbox');
-// 	const checkBox = form.querySelectorAll('.form-radio__rel');
-// 	input.classList.add('error');
+const validateTextInput = input => {
+	const parent = input.closest('.form__box');
+	removeError(parent);
 
-// 	checkBox.forEach(el => {
-// 		if (el.hasAttribute('checked')) {
-// 			result = true;
-// 		}
-
-// 		createError(el, 'Подтвердите свое присутствие!');
-
-// 		result = false;
-// 	});
-// };
-
-export function validation(form) {
-	let result = true;
-	if (validationTextInput(form)) {
-		return (result = true);
-	} else {
-		return (result = false);
+	const value = input.value.trim();
+	if (!value) {
+		setError(parent, 'Поле не заполнено!');
+		return false;
 	}
-}
+
+	if (value.length < 3) {
+		setError(parent, 'Минимальное кол-во символов 3');
+		return false;
+	}
+
+	return true;
+};
+
+const validateRadioInput = form => {
+	const parent = form.querySelector('.form-radio');
+	const radios = form.querySelectorAll('.form-radio__rel');
+
+	removeError(parent);
+
+	const isChecked = Array.from(radios).some(radio => radio.checked);
+	if (!isChecked) {
+		setError(parent, 'Подтвердите свое присутствие!');
+		return false;
+	}
+
+	return true;
+};
+
+export const validateForm = form => {
+	const textInput = form.querySelector('.form-input');
+	const isTextInputValid = validateTextInput(textInput);
+
+	const isRadioInputValid = validateRadioInput(form);
+
+	return isTextInputValid && isRadioInputValid;
+};
