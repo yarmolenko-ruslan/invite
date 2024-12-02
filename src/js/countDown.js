@@ -1,11 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
-	// конечная дата
 	const deadline = new Date(2025, 0, 1);
 
-	// id таймера
 	let timerId = null;
-
-	// вычисляем разницу дат и устанавливаем оставшееся времени в качестве содержимого элементов
 	function countdownTimer() {
 		const diff = deadline - new Date();
 		if (diff <= 0) {
@@ -20,13 +16,12 @@ document.addEventListener('DOMContentLoaded', function () {
 		$minutes.textContent = minutes < 10 ? '0' + minutes : minutes;
 		$seconds.textContent = seconds < 10 ? '0' + seconds : seconds;
 	}
-	// получаем элементы, содержащие компоненты даты
+
 	const $days = document.querySelector('#days');
 	const $hours = document.querySelector('#hours');
 	const $minutes = document.querySelector('#minutes');
 	const $seconds = document.querySelector('#seconds');
-	// вызываем функцию countdownTimer
 	countdownTimer();
-	// вызываем функцию countdownTimer каждую секунду
+
 	timerId = setInterval(countdownTimer, 1000);
 });

@@ -23,7 +23,7 @@ document.getElementById('form').addEventListener('submit', function (e) {
 			!this.champagne.checked &&
 			!this.whiteWine.checked &&
 			!this.redWine.checked &&
-			!this.konyak.checked &&
+			!this.cognac.checked &&
 			!this.vodka.checked
 		) {
 			message += 'Безалкогольные напитки';
@@ -33,7 +33,7 @@ document.getElementById('form').addEventListener('submit', function (e) {
 		message += this.champagne.checked ? `${this.champagne.value}\n` : '';
 		message += this.whiteWine.checked ? `${this.whiteWine.value} \n` : '';
 		message += this.redWine.checked ? `${this.redWine.value} \n` : '';
-		message += this.konyak.checked ? `${this.konyak.value} \n` : '';
+		message += this.cognac.checked ? `${this.cognac.value} \n` : '';
 		message += this.vodka.checked ? `${this.vodka.value} \n` : '';
 
 		axios
@@ -49,7 +49,7 @@ document.getElementById('form').addEventListener('submit', function (e) {
 				this.redWine.checked = '';
 				this.champagne.checked = '';
 				this.vodka.checked = '';
-				this.konyak.checked = '';
+				this.cognac.checked = '';
 				this.noAlcohol.checked = '';
 
 				success.style.opacity = '1';
